@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="3"
+    android:layout_marginTop="10dp"
+    android:background="#F5F5F5">
+
+    <ImageView
+        android:id="@+id/idItemImage_singleItem"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="fitXY"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        />
+
+    <TextView
+        android:id="@+id/idName_singleItem"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="name"
+        android:textSize="19dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="#4374E0"
+        android:textColor="#ffffff"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/idEdit_singleItem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Edit Info"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/idDelete_singleItem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="delete info"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
